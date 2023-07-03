@@ -11,13 +11,6 @@ if getattr(sys, 'frozen', False):
 else:
     ROOT_DIR = Path(__file__).parent.parent.absolute()
 
-FILES_DIR = os.path.join(ROOT_DIR, 'files')
-
-WALLET_FILE = os.path.join(FILES_DIR, 'wallet.txt')
-SETTINGS_FILE = os.path.join(FILES_DIR, 'settings.json')
-
-QR_CODE_IMAGE = os.path.join(FILES_DIR, 'qr_code.png')
-
 if platform.system() == 'Windows':
     LIGHTGREEN_EX = ''
     RED = ''
@@ -27,3 +20,10 @@ else:
     LIGHTGREEN_EX = Fore.LIGHTGREEN_EX
     RED = Fore.RED
     RESET_ALL = Style.RESET_ALL
+
+FILES_DIR = os.path.join(ROOT_DIR, 'files')
+
+WALLET_FILE = os.path.join(FILES_DIR, 'wallet.txt')
+SETTINGS_FILE = os.path.join(FILES_DIR, 'settings.json')
+
+QR_CODE_IMAGE = os.path.join(FILES_DIR, 'qr_code.png')
