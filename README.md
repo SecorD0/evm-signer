@@ -1,4 +1,4 @@
-<h1><p align="center">eth-signer</p></h1><h1>
+<h1><p align="center">evm-signer</p></h1>
 
 <p align="center"><img src="images/icons/app.ico" width="400"></p>
 
@@ -39,10 +39,11 @@
 - Send a signed transaction.
 
 
+
 <h1><p align="center">Useful links</p></h1>
 <p align="right"><a href="#Content">To the content</a></p>
 
-⠀[eth-signer](https://github.com/SecorD0/eth-signer)
+⠀[evm-signer](https://github.com/SecorD0/evm-signer)
 
 
 
@@ -54,16 +55,17 @@
   - `qr_code.png` — a QR code with an address or a signed transaction;
   - `settings.json` — a JSON file for program setup;
   - `wallet.txt` — a text file with a generated mnemonic or an inserted mnemonic or private key.
-- `eth-signer.exe` / `app.py` — an executable file that runs the program.
+- `evm-signer.exe` / `app.py` — an executable file that runs the program.
 
 
 
 <h1><p align="center">How to run</p></h1>
 <p align="right"><a href="#Content">To the content</a></p>
 
+
 <h2><p align="center">Windows</p></h2>
 
-1. Download an EXE file from the [releases page](https://github.com/SecorD0/eth-signer/releases).
+1. Download an EXE file from the [releases page](https://github.com/SecorD0/evm-signer/releases).
 2. Create a folder and put the EXE file in it.
 3. Disconnect from the Internet.
 4. Run the program to create necessary files.
@@ -99,20 +101,20 @@
 ```
 2. Clone the repository:
 ```sh
-git clone https://github.com/SecorD0/eth-signer
+git clone https://github.com/SecorD0/evm-signer
 ```
 3. Go to the repository:
 ```sh
-cd eth-signer
+cd evm-signer
 ```
 4. Build an image:
 ```sh
-docker build -t eth-signer .
+docker build -t evm-signer .
 ```
 5. Disconnect from the Internet.
 6. Run the program to create necessary files.
 ```sh
-docker run -it --rm -v $HOME/eth-signer/:/program --name eth-signer eth-signer
+docker run -it --rm -v $HOME/evm-signer/:/program --name evm-signer evm-signer
 ```
 7. Generate a wallet, if necessary, and exit the program.
 8. Configure the `settings.json`:
@@ -143,11 +145,11 @@ docker run -it --rm -v $HOME/eth-signer/:/program --name eth-signer eth-signer
 1. Install [Python](https://www.python.org/downloads/).
 2. Clone the repository:
 ```sh
-git clone https://github.com/SecorD0/eth-signer
+git clone https://github.com/SecorD0/evm-signer
 ```
 3. Go to the repository:
 ```sh
-cd eth-signer
+cd evm-signer
 ```
 4. Set up an environment.
 5. Install requirements:
@@ -187,7 +189,7 @@ pip install pyinstaller
 ```
 - Build the EXE file:
 ```sh
-pyinstaller app.py -Fn eth-signer -i images/icons/app.ico --add-binary "images/icons;images/icons" --add-binary "data\wordlist;eth_account\hdaccount\wordlist"
+pyinstaller app.py -Fn evm-signer -i images/icons/app.ico --add-binary "images/icons;images/icons" --add-binary "data\wordlist;eth_account\hdaccount\wordlist"
 ```
 
 
@@ -314,7 +316,7 @@ pyinstaller app.py -Fn eth-signer -i images/icons/app.ico --add-binary "images/i
 <h1><p align="center">Report a bug or suggest an idea</p></h1>
 <p align="right"><a href="#Content">To the content</a></p>
 
-⠀If you found a bug or have an idea, go to [the link](https://github.com/SecorD0/eth-signer/issues/new/choose), select the template, fill it out and submit it.
+⠀If you found a bug or have an idea, go to [the link](https://github.com/SecorD0/evm-signer/issues/new/choose), select the template, fill it out and submit it.
 
 
 
